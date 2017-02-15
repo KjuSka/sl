@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>    Lietuvos vëliava, nupieðta CSS pagalba</title>
+<style type="text/css">
+body {
+margin:0;    
+padding:0;
+}
+#veliava {
+margin: 0 auto 0 auto;
+height: 300px;
+width: 450px;
+}
+#geltona {
+background-color: rgb(253, 185, 19); // arba background-color: #FDB913;
+}
+#zalia {
+background-color: rgb(0, 106, 68); // arba background-color: #006A44;
+}
+#raudona {
+background-color: rgb(193, 39, 45); // arba background-color: #C1272D;
+}
+#geltona, #zalia, #raudona {
+height: 100px;
+}
+</style>
+</head>
+<body>
+<div id="veliava">
+      <div id="geltona">
+      </div>
+      <div id="zalia">
+      </div>
+      <div id="raudona">
+      </div>
+    </div>
+		<h2>Tai Lietuvos vÄ—liava - patvirtink</h2>
+	<p id="msg"></p>
+	<script>
+		 var userPreference;
+
+		if (confirm("atvaizduota teisingai") == true) {
+			userPreference = "tai duomenis iÅ¡saugau!";
+		} else {
+		alert("tikrai ne?");
+			userPreference = "ne? Tai neiÅ¡saugau :(";
+		}
+
+		document.getElementById("msg").innerHTML = userPreference; 
+
+    </script>
+</body>
+</html>
